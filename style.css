@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #445747;
+}
+
+h1 {
+    margin: 30px;
+    font-family: 'Lobster', cursive;
+    text-shadow: 4px 0 #232931;
+    font-size: 4rem;
+    color: #cca61e;
+    text-align: center;
+}
+
+p {
+    font-size: 2rem;
+    color: #cca61e;
+    font-family: 'Indie Flower', cursive;
+}
+
+img {
+    width: 80%;
+}
+
+footer {
+    margin-top: 5%;
+    color: #eeeeee;
+    text-align: center;
+    font-family: 'Indie Flower', cursive;
+}
+
+.container {
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+
+.dice {
+    padding: 50px;
+    margin: 20px;
+    display: inline-block;
+}
+
+.btn {
+    background-color: #cca61e;
+    width: 180px;
+    height: 50px;
+    text-shadow: 1.5px 0 #232931;
+    border-radius: 25px;
+    font-family: 'Indie Flower', cursive;
+    font-size: 25px;
+    cursor: pointer;
+    border: none;
+}
+
+.dice img {
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.rolling {
+    animation: shake 0.5s ease-in-out, fadeIn 0.5s ease-in-out;
+}
+
+@keyframes shake {
+    0% { transform: rotate(0deg) translateX(0px); }
+    25% { transform: rotate(-15deg) translateX(-5px); }
+    50% { transform: rotate(15deg) translateX(5px); }
+    75% { transform: rotate(-10deg) translateX(-3px); }
+    100% { transform: rotate(0deg) translateX(0px); }
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; transform: scale(0.8); }
+    100% { opacity: 1; transform: scale(1); }
+}
